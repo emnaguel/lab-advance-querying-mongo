@@ -48,8 +48,8 @@ limit: 10
 
 ### 6. All the companies that don't include the `partners` field.
 <!-- Your Code Goes Here -->
-filter:
-projection: {partners: 0}
+filter : {$nin: [ partners ] 
+projection: 
 sort:
 skip: 
 limit: 
@@ -85,8 +85,8 @@ limit:
 
 <!-- Your Code Goes Here -->
 filter: 
-projection: {number_of_employees: -1}
-sort:
+projection: 
+sort: {number_of_employees: -1}
 skip: 
 limit: 10
 
