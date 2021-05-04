@@ -48,7 +48,7 @@ limit: 10
 
 ### 6. All the companies that don't include the `partners` field.
 <!-- Your Code Goes Here -->
-filter : {$nin: [ partners ] 
+filter : {$nin: [ partners ] }
 projection: 
 sort:
 skip: 
